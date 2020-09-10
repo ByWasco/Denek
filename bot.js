@@ -1855,7 +1855,7 @@ const express = require('express');
 
 const webApp = express();
 
-const webPort = 3000;
+const webPort = process.env.PORT || 3000;
 
 webApp.get('/', (req, res) => {
 	res.send('by Valor with <3');
